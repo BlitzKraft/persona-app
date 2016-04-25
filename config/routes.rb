@@ -54,5 +54,6 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  root to: "home#index"
+  resources :persona_apps
+  root to: "persona_apps#index"
 end

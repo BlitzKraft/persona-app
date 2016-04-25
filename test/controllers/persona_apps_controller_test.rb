@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ScreenshotTest < ActiveSupport::TestCase
+class PersonaAppsControllerTest < ActionController::TestCase
   # test "the truth" do
   #   assert true
   # end

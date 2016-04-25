@@ -1,0 +1,2 @@
+module PersonaAppsHelper
+end
