@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '2.2.4'
 gem 'pg'
 gem 'rails', '4.2.5.1'
 #gem 'sqlite3'
