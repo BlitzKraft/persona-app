@@ -1,0 +1,14 @@
+<% if @persona_app.errors.any? %>
+	<div id="errors">
+		<h4><%= pluralize(@persona_app.errors.count, "Error") %> prevented the operation</h4>
+		<ul>
+			<% @persona_app.errors.full_messages.each do |msg| %>
+				<li><%= msg %></li>
+			<% end %>
+		</ul>
+	</div>
+<% end %>
+<div class="container">
+	<h2>Submit an App </h2>
+	<%= render 'form' %>
+</div>

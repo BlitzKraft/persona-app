@@ -1,0 +1,14 @@
+<div id="appIndex" class="container grid">
+	<% if !@persona_apps.nil? %>
+		<div class="row">
+		<% @persona_apps.each do |app| %>
+			<div class="col-lg-3">
+				<p>
+				<img src="http://placekitten.com/g/200/200" />
+				<%= link_to app.name, persona_app_path(app), :class => "btn btn-default btn-md btn-block" ,:style => "width: 200px;" %>
+				</p>
+			</div>
+		<% end %>
+		</div>
+	<% end %> 
+</div>

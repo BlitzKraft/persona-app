@@ -1,0 +1,21 @@
+<%= form_for @persona_app, :class => "form-horizontal" do |f| %>
+	<fieldset>
+		<%= f.file_field :app_icon, :enctype => "multipart/form-data", :onchange => "showThumbnail()", :id => "icon", :style => "display: none;", :accept => "image/*" %>
+		<div class="input-append input-group">
+			<input id="stl-display" class="btn form-control" type="text">
+			<span class="input-group-btn">
+				<button class="btn btn-primary" type="button" id="thumbnail" onclick="document.getElementById('icon').click()">
+					Choose icon
+				</button>
+			</span>
+		</div>
+		<br>
+	<%= f.text_field :name, :placeholder => "App name", :class => "form-control", :id => "appName" %>
+	<br>
+	<%= f.text_area :description, :placeholder => "App description", :class => "form-control", :rows => "3" %>
+	<br>
+		<%= submit_tag "Save application", :class => "btn btn-primary" %>
+		<%= link_to "Cancel", root_path, :class => "btn btn-danger" %>
+	</fieldset>
+<% end %>
+
