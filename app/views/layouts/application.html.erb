@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PersonaApps</title>
+  <title>App Store - Persona</title>
 		<link rel="shortcut icon" type="image/x-icon" href="<%= asset_path('favicon.ico') %>"/>
 		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -15,17 +15,21 @@
 				<div class="navbar-header">
 					<%= link_to "Persona App Store", root_path, :class => "navbar-brand" %>
 				</div>
+				<% if user_signed_in? %>
+					<ul class="nav navbar-nav navbar-right pull-right"> 
+						<li> <%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+					</ul>
+				<% else %>
 				<ul class="nav navbar-nav navbar-right pull-right"> 
 					<li><%= link_to "Register", new_user_registration_path %></li>
 					<li><%= link_to "Login", new_user_session_path %></li>
 				</ul>
+				<% end %>
 			</div>
 		</div>
 	</div>
-	<p class="notice"><%= notice %></p>
-	<p class="alert"><%= alert %></p>
-
+	<p class="notice container"><%= notice %></p>
+	<p class="alert container"><%= alert %></p>
 <%= yield %>
-
 </body>
 </html>

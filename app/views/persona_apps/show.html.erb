@@ -1,0 +1,10 @@
+<div class="container">
+	<img src="http://placekitten.com/g/500/300" />
+	<h3><%= @persona_app.name %></h3>
+	<%= link_to "Install", persona_app_path(@persona_app), :class => "btn btn-success" %>
+	<p>
+	<%= @persona_app.description %>
+	</p>
+<%= link_to "Edit", edit_persona_app_path() %>
+</div>
+

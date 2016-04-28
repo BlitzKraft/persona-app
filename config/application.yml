@@ -1,0 +1,50 @@
+# Add configuration values here, as shown below.
+#
+# pusher_app_id: "2954"
+# pusher_key: 7381a978f7dd7f9a1117
+# pusher_secret: abdc3b896a0ffb85d373
+# stripe_api_key: sk_test_2J0l093xOyW72XUYJHE4Dv2r
+# stripe_publishable_key: pk_test_ro9jV5SNwGb1yYlQfzG17LHK
+#
+# production:
+#   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
+#   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
+
+fb_app_id: ""
+fb_secret: ""
+
+bitbucket_app_id: "S4jUebqMzuBGhQ3tfS"
+bitbucket_secret: "EeenBuS3ZPg4MdvydMLHq9zfFfSjR7Vk"
+
+github_app_id: "4b622850c30630d355d1"
+github_secret: "5fbc79476208efced8780ebc69c9a20da43f0d5d"
+
+google_app_id: ""
+google_secret: ""
+
+amazon_s3_access_key: ""
+amazon_s3_secret_key: ""
+amazon_s3_region: ""
+amazon_s3_bucket: ""
+
+stripe_key: ""
+
+production:
+        fb_app_id: ""
+        fb_secret: ""
+
+        bitbucket_app_id: "ysVpzHgnkz6DLbm6Mt"
+        bitbucket_secret: "UegNTqSG3g56cvbJ2gXecLPGk4yX72KY"
+
+        github_app_id: "d21dcef9823f7446015c"
+        github_secret: "93965ef26b07cabb26025d01e860aca3fbe225f6"
+
+        google_app_id: ""
+        google_secret: ""
+
+        amazon_s3_access_key: ""
+        amazon_s3_secret_key: ""
+        amazon_s3_region: ""
+        amazon_s3_bucket: ""
+                
+        stripe_key: ""
